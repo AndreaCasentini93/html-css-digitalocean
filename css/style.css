@@ -224,9 +224,9 @@ a:hover {
     box-shadow: 1px 1px 3px #d3d3d3;
 }
 #jumbotron #account p,
-#jumbotron #account a {
+#jumbotron #account p a {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 #jumbotron #account p a:hover {
     text-decoration: underline;
