@@ -112,9 +112,6 @@ a:hover {
     line-height: 80px;
     vertical-align: middle;
 }
-#navigation .navbar-nav {
-    padding-left: 100px;
-}
 #navigation .navbar-nav a {
     line-height: 80px;
     padding: 0 15px;
@@ -126,6 +123,9 @@ a:hover {
     border-radius: unset;
     margin: 0;
     background-color: unset;
+}
+#navigation .navbar-nav {
+    padding-left: 15px;
 }
 #navigation.navbar-default .navbar-nav>li>a,
 #navigation.navbar-default .navbar-nav>li>.dropdown {
@@ -213,6 +213,10 @@ a:hover {
 
 
     /* HEADER */
+    #navigation .navbar-nav {
+        padding-left: 100px;
+    }
+
     #jumbotron h1 {
         font-size: 65px;
     }
