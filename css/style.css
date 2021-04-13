@@ -189,6 +189,13 @@ a:hover {
 #navigation.navbar-default .navbar-toggle {
     border: none;
 }
+#navigation .dropdown-menu>li>a {
+    color: #031c4e;
+}
+#navigation .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #006aff!important;
+    background-color: #00000000;
+}
 
 /* HEADER JUMBOTRON */
 #jumbotron {
