@@ -5,9 +5,6 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
-.container {
-    overflow: hidden;
-}
 
 .p_relative {
     position: relative;
@@ -156,6 +153,7 @@ a:hover {
     border: none;
     border-radius: unset;
     margin: 0;
+    color: #031c4e;
     background-color: unset;
 }
 #navigation .navbar-nav {
@@ -247,6 +245,9 @@ a:hover {
 #customers {
     padding: 30px 0;
 }
+#customers .container {
+    overflow-x: hidden;
+}
 #customers h2 {
     margin-bottom: 30px;
     font-size: 16px;
@@ -255,13 +256,11 @@ a:hover {
     line-height: 120px;
 }
 #customers img {
-    width: 160px;
+    width: 170px;
 }
 #customers a {
     display: block;
 }
-
-
 
 /* MAIN CONFIGURATION */
 
