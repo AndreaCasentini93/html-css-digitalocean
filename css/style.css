@@ -10,6 +10,14 @@ body {
     position: relative;
 }
 
+a {
+    color: #006aff;
+    transition: color .3s;
+}
+a:hover {
+    color: #0048c5;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -23,9 +31,9 @@ body {
     transition: background-color .3s;
 }
 .btn.btn-default.button_blue:hover {
-    border: 1px solid #001e9a;
+    border: 1px solid #0048c5;
     color: #ffffff;
-    background-color: #001e9a;
+    background-color: #0048c5;
 }
 .btn.btn-default.button_white_grey {
     border: 1px solid #00000000;
@@ -187,12 +195,6 @@ body {
     margin-bottom: 5px;
     box-shadow: 1px 1px 3px #d3d3d3;
 }
-#jumbotron #account a {
-    transition: color .3s;
-}
-#jumbotron #account a:hover {
-    color: #031c4e;
-}
 #jumbotron #account p {
     margin-top: 10px;
     font-size: 15px;
@@ -230,7 +232,7 @@ body {
     }
     #navigation .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 #ffffff1a;
     }
     #navigation .navbar-collapse.collapse {
         display: none!important;
@@ -252,7 +254,8 @@ body {
     }
     #navigation .navbar-collapse.collapse.in { 
         display: block!important;
-        overflow: auto!important;
+        overflow-y: auto!important;
+        overflow-x: hidden!important;
     }
     #navigation .collapsing {
         overflow: hidden!important;
