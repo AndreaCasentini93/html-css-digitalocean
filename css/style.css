@@ -35,17 +35,17 @@ a:hover {
 }
 
 .btn.btn-default.button_blue {
-    border: 1px solid #006aff;
+    border: 1px solid #579aff;
     color: #ffffff;
-    background-color: #006aff;
+    background-color: #579aff;
     transition: border .3s;
     transition: color .3s;
     transition: background-color .3s;
 }
 .btn.btn-default.button_blue:hover {
-    border: 1px solid #0048c5;
+    border: 1px solid #006aff;
     color: #ffffff;
-    background-color: #0048c5;
+    background-color: #006aff;
 }
 .btn.btn-default.button_white_blue {
     border: 1px solid #006aff;
