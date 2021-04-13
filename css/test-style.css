@@ -4,3 +4,9 @@ body {
 }
 
 /* TEST */
+a {
+    transition: color .3s;
+}
+a:hover {
+    color: #031c4e;
+}

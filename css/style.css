@@ -6,6 +6,41 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.p_relative {
+    position: relative;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.btn.btn-default.button_blue {
+    border: 1px solid #006aff;
+    color: #ffffff;
+    background-color: #006aff;
+    transition: border .3s;
+    transition: color .3s;
+    transition: background-color .3s;
+}
+.btn.btn-default.button_blue:hover {
+    border: 1px solid #001e9a;
+    color: #ffffff;
+    background-color: #001e9a;
+}
+.btn.btn-default.button_white_grey {
+    border: 1px solid #00000000;
+    color: #747474;
+    background-color: #00000000;
+    transition: border .3s;
+    transition: color .3s;
+    transition: background-color .3s;
+}
+.btn.btn-default.button_white_grey:hover {
+    border: 1px solid #00000000;
+    color: #031c4e;
+    background-color: #00000000;
+}
+
 .color_white {
     color: #ffffff;
 }
@@ -18,16 +53,13 @@ body {
 .color_lightblue {
     color: #bdc6ef
 }
-.color_grey_1 {
+.color_grey {
     color: #75809a;
 }
-.color_grey_2 {
+.color_darkgrey {
     color: #5c6a88;
 }
-.color_grey_3 {
-    color: #747474;
-}
-.color_grey_4 {
+.color_lightgrey {
     color: #9ca6b8;
 }
 .color_green {
@@ -93,6 +125,10 @@ body {
     color: #031c4e;
     transition: color .3s;
 }
+#navigation.navbar-default .navbar-nav>li>a:hover,
+#navigation .btn-default:hover {
+    color: #006aff;
+}
 #navigation .navbar-nav .btn.btn-default.button_white_blue {
     display: inline-block;
     line-height: 35px;
@@ -103,10 +139,6 @@ body {
     background-color: #00000000;
     transition: color .3s;
     transition: background-color .3s;
-}
-#navigation.navbar-default .navbar-nav>li>a:hover,
-#navigation .btn-default:hover {
-    color: #006aff;
 }
 #navigation .navbar-nav .btn.btn-default.button_white_blue:hover {
     line-height: 35px;
@@ -141,9 +173,29 @@ body {
 }
 #jumbotron #account {
     overflow: hidden;
-    padding: 30px 5px;
+    padding: 30px 20px;
     border-radius: 10px;
     background-color: #ffffff;
+}
+#jumbotron #account h2 div:first-child {
+    margin-bottom: 10px;
+}
+#jumbotron #account .btn.btn-default {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 3px #d3d3d3;
+}
+#jumbotron #account a {
+    transition: color .3s;
+}
+#jumbotron #account a:hover {
+    color: #031c4e;
+}
+#jumbotron #account p {
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 /* MEDIA QUERIES */
