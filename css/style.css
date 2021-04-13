@@ -5,20 +5,35 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+.container {
+    overflow: hidden;
+}
 
 .p_relative {
     position: relative;
 }
 
+.list_inline {
+    list-style: none;
+}
+.list_inline li {
+    display: inline-block;
+}
+.list_inline li:not(:last-child) {
+    margin-right: 10px;
+}
+
 a {
+    font-size: 16px;
     color: #006aff;
     transition: color .3s;
 }
 a:hover {
+    text-decoration: none;
     color: #0048c5;
 }
 
-.underline {
+.text_underline {
     text-decoration: underline;
 }
 
@@ -34,6 +49,19 @@ a:hover {
     border: 1px solid #0048c5;
     color: #ffffff;
     background-color: #0048c5;
+}
+.btn.btn-default.button_white_blue {
+    border: 1px solid #006aff;
+    color: #006aff;
+    background-color: #00000000;
+    transition: border .3s;
+    transition: color .3s;
+    transition: background-color .3s;
+}
+.btn.btn-default.button_white_blue:hover {
+    border: 1px solid #006aff;
+    color: #ffffff;
+    background-color: #006aff;
 }
 .btn.btn-default.button_white_grey {
     border: 1px solid #00000000;
@@ -87,8 +115,14 @@ a:hover {
     background-color: #f3f5f9;
 }
 
+.go_link::after {
+    content: "\003E";
+    margin-left: 10px;
+}
 
 /* HEADER */
+
+/* HEADER NAVIGATION*/
 #navigation.navbar-default {
     min-height: 80px;
     border: none;
@@ -140,21 +174,15 @@ a:hover {
 #navigation .navbar-nav .btn.btn-default.button_white_blue {
     display: inline-block;
     line-height: 35px;
-    border: 1px solid #006aff;
     margin-top: 22.5px;
     margin-bottom: 22.5px;
     color: #006aff;
-    background-color: #00000000;
+    transition: border .3s;
     transition: color .3s;
     transition: background-color .3s;
 }
 #navigation .navbar-nav .btn.btn-default.button_white_blue:hover {
-    line-height: 35px;
-    border: 1px solid #006aff;
-    margin-top: 22.5px;
-    margin-bottom: 22.5px;
     color: #ffffff;
-    background-color: #006aff;
 }
 #navigation.navbar-default .navbar-toggle .icon-bar {
     background-color: #006aff;
@@ -163,11 +191,12 @@ a:hover {
     border: none;
 }
 
+/* HEADER JUMBOTRON */
 #jumbotron {
+    margin-top: 80px;
     background-image: url('../img/bg-banner-home.jpg');
     background-position: top;
     background-size: cover;
-    margin-top: 80px;
 }
 #jumbotron .container {
     padding-top: 40px;
@@ -185,7 +214,8 @@ a:hover {
     border-radius: 10px;
     background-color: #ffffff;
 }
-#jumbotron #account h2 div:first-child {
+#jumbotron #account h2 span {
+    display: block;
     margin-bottom: 10px;
 }
 #jumbotron #account .btn.btn-default {
@@ -195,30 +225,100 @@ a:hover {
     margin-bottom: 5px;
     box-shadow: 1px 1px 3px #d3d3d3;
 }
-#jumbotron #account p {
+#jumbotron #account p,
+#jumbotron #account a {
     margin-top: 10px;
     font-size: 14px;
 }
+#jumbotron #account p a:hover {
+    text-decoration: underline;
+}
+#jumbotron #account a img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    width: 20px;
+}
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/* MAIN */
+
+/* MAIN CUSTOMERS */
+#customers {
+    padding: 30px 0;
+}
+#customers h2 {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+#customers [class*="col-"] {
+    line-height: 120px;
+}
+#customers img {
+    width: 160px;
+}
+#customers a {
+    display: block;
+}
 
 
+
+/* MAIN CONFIGURATION */
+
+/* MAIN PANEL */
+
+/* MAIN FEATURES */
+
+/* MAIN SERVICE */
+
+/* MAIN TEAMS */
+
+/* MAIN STARTED */
+
+/* FOOTER */
+
+
+@media screen and (min-width: 768px) {
+
+    /* MAIN */
+
+    /* MAIN CUSTOMERS */
+    #customers img {
+        width: 110px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    /* MAIN */
+
+    /* MAIN CUSTOMERS */
+    #customers img {
+        width: 140px;
+    }
 
 }
 
 @media screen and (min-width: 1200px) {
-    
-    /* COMMONS */
-
 
     /* HEADER */
+
+    /* HEADER NAVIGATION */
     #navigation .navbar-nav {
         padding-left: 100px;
     }
 
+    /* HEADER JUMBOTRON */
     #jumbotron h1 {
         font-size: 65px;
+    }
+
+    /* MAIN */
+
+    /* MAIN CUSTOMERS */
+    #customers img {
+        width: 170px;
     }
 
 }
@@ -227,7 +327,6 @@ a:hover {
 /* MEDIA QUERY NAVBAR COLLAPS */
 @media screen and (max-width: 1199px) {
 
-    /* NAVBAR COLLAPSING */
     #navigation .navbar-header {
         float: none;
     }
@@ -264,7 +363,6 @@ a:hover {
     #navigation .collapsing {
         overflow: hidden!important;
     }
-    /* /NAVBAR COLLAPSING*/
 
 }
 /* MEDIA QUERY NAVBAR COLLAPS */
