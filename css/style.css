@@ -430,6 +430,23 @@ footer .container {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+footer .list_inline {
+    padding: 0px;
+}
+footer img {
+    margin-bottom: 10px;
+}
+footer p {
+    font-size: 15px;
+}
+footer .list_inline a {
+    font-size: 21px;
+    color: #9ca6b8;
+    transition: color .3s;
+}
+footer .list_inline a:hover {
+    color: #ffffff;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
