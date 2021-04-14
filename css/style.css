@@ -261,10 +261,10 @@ a:hover {
     font-size: 16px;
 }
 #customers [class*="col-"] {
-    line-height: 120px;
+    line-height: 250px;
 }
 #customers img {
-    width: 170px;
+    width: 100%;
 }
 
 /* MAIN CONFIGURATION */
@@ -287,20 +287,15 @@ a:hover {
     /* MAIN */
 
     /* MAIN CUSTOMERS */
-    #customers img {
-        width: 110px;
+    #customers [class*="col-"] {
+        line-height: 150px;
     }
 
 }
 
 @media screen and (min-width: 992px) {
 
-    /* MAIN */
 
-    /* MAIN CUSTOMERS */
-    #customers img {
-        width: 140px;
-    }
 
 }
 
@@ -316,13 +311,6 @@ a:hover {
     /* HEADER JUMBOTRON */
     #jumbotron h1 {
         font-size: 65px;
-    }
-
-    /* MAIN */
-
-    /* MAIN CUSTOMERS */
-    #customers img {
-        width: 170px;
     }
 
 }
