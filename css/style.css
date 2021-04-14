@@ -271,7 +271,21 @@ a:hover {
 
 /* MAIN CONFIGURATION */
 #configuration .container {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#configuration h2 {
+    font-size: 35px;
+}
+#configuration p {
+    margin-bottom: 80px;
+    font-size: 22.5px;
+}
+#configuration #list_grey {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #75809a;
 }
 #configuration #list_grey a {
     color: #75809a;
