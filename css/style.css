@@ -171,7 +171,7 @@ a:hover {
     background-color: #ffffff
 }
 .background_blue {
-    background-color: #001e9a;
+    background-image: linear-gradient(#0047c5, #001e99);
 }
 .background_darkblue {
     background-color: #031c4e;
@@ -370,10 +370,15 @@ a:hover {
     padding-right: 20px;
     margin-bottom: 10px;
 }
+#features .offer_box img {
+    margin-top: 20px;
+}
 
 
 /* MAIN SERVICE */
-
+#service {
+    
+}
 
 /* MAIN TEAMS */
 #teams h2 {
