@@ -19,6 +19,14 @@ body {
 .list_inline li:not(:last-child) {
     margin-right: 10px;
 }
+.list_block {
+    list-style: none;
+    padding: 0;
+}
+.list_block li:not(:last-child) {
+    padding-bottom: 20px;
+}
+
 
 a {
     font-size: 16px;
@@ -87,9 +95,6 @@ a:hover {
     color: #bdc6ef
 }
 .color_grey {
-    color: #75809a;
-}
-.color_darkgrey {
     color: #5c6a88;
 }
 .color_lightgrey {
@@ -265,6 +270,17 @@ a:hover {
 }
 
 /* MAIN CONFIGURATION */
+#configuration .container {
+    padding: 50px 0;
+}
+#configuration #list_grey a {
+    color: #75809a;
+    transition: color .3s;
+}
+#configuration #list_grey a:hover {
+    color: #0048c5;
+}
+
 
 /* MAIN PANEL */
 
