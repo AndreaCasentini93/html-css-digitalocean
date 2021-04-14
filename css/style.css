@@ -27,7 +27,9 @@ body {
     padding-bottom: 20px;
 }
 
-
+h1, h2 {
+    font-weight: 700;
+}
 a {
     font-size: 16px;
     color: #006aff;
@@ -261,6 +263,7 @@ a:hover {
 #customers h2 {
     margin-bottom: 20px;
     font-size: 16px;
+    font-weight: 500;
 }
 #customers [class*="col-"] {
     line-height: 250px;
@@ -289,20 +292,26 @@ a:hover {
     margin-bottom: 40px;
 }
 #configuration #list_grey a {
+    font-size: 18px;
     color: #75809a;
     transition: color .3s;
 }
 #configuration #list_grey a:hover {
     color: #0048c5;
 }
+#configuration .configuration_box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 #configuration .configuration_box img {
     width: 8%;
 }
 #configuration .configuration_box h2 {
-    font-size: 15px;
+    font-size: 18px;
 }
 #configuration .configuration_box p {
-    font-size: 14px;
+    margin-bottom: 20px;
+    font-size: 17px;
 }
 
 
@@ -329,9 +338,13 @@ a:hover {
     }
 
     /* MAIN CONFIGURATION */
+    #configuration .configuration_box {
+        min-height: 270px;
+    }
     #configuration .configuration_box img {
         width: 25%;
     }
+    
 
 }
 
@@ -340,8 +353,20 @@ a:hover {
     /* MAIN */
 
     /* MAIN CONFIGURATION */
+    #configuration #list_grey a {
+        font-size: 16px;
+    }
+    #configuration .configuration_box {
+        min-height: 180px;
+    }
     #configuration .configuration_box img {
         width: 15%;
+    }
+    #configuration .configuration_box h2 {
+        font-size: 15px;
+    }
+    #configuration .configuration_box p {
+        font-size: 14px;
     }
 
 }
