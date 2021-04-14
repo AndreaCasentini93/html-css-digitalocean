@@ -286,6 +286,7 @@ a:hover {
     padding-bottom: 10px;
     padding-left: 10px;
     border-left: 2px solid #75809a;
+    margin-bottom: 40px;
 }
 #configuration #list_grey a {
     color: #75809a;
@@ -293,6 +294,15 @@ a:hover {
 }
 #configuration #list_grey a:hover {
     color: #0048c5;
+}
+#configuration .configuration_box img {
+    width: 8%;
+}
+#configuration .configuration_box h2 {
+    font-size: 15px;
+}
+#configuration .configuration_box p {
+    font-size: 14px;
 }
 
 
@@ -318,11 +328,21 @@ a:hover {
         line-height: 150px;
     }
 
+    /* MAIN CONFIGURATION */
+    #configuration .configuration_box img {
+        width: 25%;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
 
+    /* MAIN */
 
+    /* MAIN CONFIGURATION */
+    #configuration .configuration_box img {
+        width: 15%;
+    }
 
 }
 
