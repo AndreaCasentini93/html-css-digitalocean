@@ -52,6 +52,7 @@ section .container {
     border: 1px solid #006aff;
     background-color: #00000000;
     cursor: pointer;
+    transition: background-color .3s;
 }
 .balls_box .ball:hover {
     background-color: #006aff;
@@ -450,6 +451,7 @@ footer .container {
         font-weight: 700;
         color: #031c4e;
         cursor: pointer;
+        transition: color .3s;
     }
     .chevron_box i[class*="fa-chevron-"].active {
         color: #6f7b97;
