@@ -495,6 +495,17 @@ footer .container {
 }
 
 
+/* CUSTOMERS ICON */
+@media screen and (max-width: 540px) {
+
+    /* MAIN CUSTOMERS */
+    #customers [class*="col-"] {
+        line-height: 150px;
+    }
+
+}
+/* /CUSTOMERS ICON */
+
 /* MEDIA QUERY NAVBAR COLLAPS */
 @media screen and (max-width: 1199px) {
 
@@ -536,4 +547,4 @@ footer .container {
     }
 
 }
-/* MEDIA QUERY NAVBAR COLLAPS */
+/* /MEDIA QUERY NAVBAR COLLAPS */
