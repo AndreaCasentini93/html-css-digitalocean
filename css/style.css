@@ -10,6 +10,21 @@ section .container {
     padding-bottom: 50px;
 }
 
+.offer_box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.offer_box img {
+    width: 11%;
+}
+.offer_box h2 {
+    font-size: 18px;
+}
+.offer_box p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
 .chevron_box {
     position: relative;
     padding: 10px 40px;
@@ -17,6 +32,7 @@ section .container {
 .chevron_box i[class*="fa-chevron-"] {
     display: none;
 }
+
 .balls_box {
     padding: 0;
     margin: 0;
@@ -301,7 +317,7 @@ a:hover {
 /* MAIN */
 
 /* MAIN CUSTOMERS */
-#customers .container{
+#customers .container {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -318,8 +334,8 @@ a:hover {
 }
 
 /* MAIN CONFIGURATION */
-#configuration p {
-    margin-bottom: 80px;
+#configuration .container > p {
+    margin-bottom: 60px;
 }
 #configuration #list_grey {
     padding-top: 10px;
@@ -336,24 +352,10 @@ a:hover {
 #configuration #list_grey a:hover {
     color: #0048c5;
 }
-#configuration .configuration_box {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-#configuration .configuration_box img {
-    width: 8%;
-}
-#configuration .configuration_box h2 {
-    font-size: 18px;
-}
-#configuration .configuration_box p {
-    margin-bottom: 20px;
-    font-size: 17px;
-}
 
 /* MAIN CONTROL PANEL */
-#control_panel p {
-    margin-bottom: 80px;
+#control_panel .container > p {
+    margin-bottom: 60px;
 }
 #control_panel img {
     width: 100%;
@@ -361,6 +363,9 @@ a:hover {
 }
 
 /* MAIN FEATURES */
+#features .container > h2 {
+    margin-bottom: 30px;
+}
 
 
 /* MAIN SERVICE */
@@ -368,7 +373,7 @@ a:hover {
 
 /* MAIN TEAMS */
 #teams h2 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 #teams .rocker_box {
     padding: 60px 5px;
@@ -402,6 +407,13 @@ footer .container {
 @media screen and (min-width: 768px) {
 
     /* COMMONS */
+    .offer_box {
+        min-height: 270px;
+    }
+    .offer_box img {
+        width: 50px;
+    }
+
     .chevron_box i[class*="fa-chevron-"] {
         display: inline-block;
         position: absolute;
@@ -437,37 +449,28 @@ footer .container {
     #customers [class*="col-"] {
         line-height: 150px;
     }
-
-    /* MAIN CONFIGURATION */
-    #configuration .configuration_box {
-        min-height: 270px;
-    }
-    #configuration .configuration_box img {
-        width: 25%;
-    }
     
 
 }
 
 @media screen and (min-width: 992px) {
 
+    /* COMMONS */
+    .offer_box {
+        min-height: 180px;
+    }
+    .offer_box h2 {
+        font-size: 15px;
+    }
+    .offer_box p {
+        font-size: 14px;
+    }
+
     /* MAIN */
 
     /* MAIN CONFIGURATION */
     #configuration #list_grey a {
         font-size: 16px;
-    }
-    #configuration .configuration_box {
-        min-height: 180px;
-    }
-    #configuration .configuration_box img {
-        width: 15%;
-    }
-    #configuration .configuration_box h2 {
-        font-size: 15px;
-    }
-    #configuration .configuration_box p {
-        font-size: 14px;
     }
 
     /* MAIN TEAMS */
@@ -493,6 +496,7 @@ footer .container {
     }
 
 }
+
 
 
 /* MEDIA QUERY CUSTOMERS ICON */
