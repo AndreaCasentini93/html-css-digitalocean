@@ -23,6 +23,7 @@ section .container {
 }
 .balls_box ul {
     list-style: none;
+    padding: 0;
 }
 .balls_box li {
     margin: 0 0.5px;
@@ -225,7 +226,9 @@ a:hover {
     display: inline-block;
     line-height: 35px;
     margin-top: 22.5px;
+    margin-right: 15px;
     margin-bottom: 22.5px;
+    margin-left: 15px;
     color: #006aff;
     transition: border .3s;
     transition: color .3s;
@@ -419,6 +422,13 @@ footer .container {
     .chevron_box .fas.fa-chevron-right:hover {
         right: 0;
         color: #6f7b97;
+    }
+
+    /* HEADER */
+
+    /* HEADER NAVIGATION */
+    #navigation .navbar-toggle {
+        margin-right: 0;
     }
 
     /* MAIN */
