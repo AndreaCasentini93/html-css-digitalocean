@@ -82,7 +82,7 @@ section .container {
     padding-bottom: 20px;
 }
 
-h1, h2 {
+h1, h2, h4 {
     font-weight: 700;
 }
 h1 {
@@ -90,6 +90,10 @@ h1 {
 }
 h2 {
     font-size: 35px;
+}
+h4 {
+    margin: 0;
+    font-size: 16px;
 }
 p {
     font-size: 22.5px;
@@ -445,6 +449,23 @@ footer .list_inline a {
     transition: color .3s;
 }
 footer .list_inline a:hover {
+    color: #ffffff;
+}
+footer .list_block {
+    margin-top: 10px;
+}
+footer .list_block:not(:last-child) {
+    min-height: 370px;
+}
+footer .list_block li:not(:last-child) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer .list_block a {
+    font-size: 15px;
+    color: #9ca6b8;
+}
+footer .list_block a:hover {
     color: #ffffff;
 }
 
