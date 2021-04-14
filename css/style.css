@@ -374,10 +374,26 @@ a:hover {
     margin-top: 20px;
 }
 
-
 /* MAIN SERVICE */
-#service {
-    
+#service .container > h2{
+    margin-bottom: 20px;
+}
+#service .row .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#service .row .row:not(:last-child) {
+    border-bottom: 1px solid #ffffff;
+}
+#service .service_text {
+    font-size: 15px;
+    white-space: nowrap;
+}
+#service .container > .row > [class*="col-"] {
+    margin-bottom: 20px;
+}
+#service .container [class*="col-"] [class*="col-"] {
+    overflow: hidden;
 }
 
 /* MAIN TEAMS */
@@ -458,7 +474,6 @@ footer .container {
     #customers [class*="col-"] {
         line-height: 100px;
     }
-    
 
 }
 
@@ -509,6 +524,17 @@ footer .container {
     /* MAIN CUSTOMERS */
     #customers [class*="col-"] {
         line-height: 150px;
+    }
+
+    /* MAIN SERVICE */
+    #service .container > .row > [class*="col-"]:first-child {
+        padding-right: 30px;
+    }
+    #service .container > .row > [class*="col-"]:last-child {
+        padding-left: 30px;
+    }
+    #service .container > .row > [class*="col-"] {
+        margin-bottom: 0;
     }
 
 }
