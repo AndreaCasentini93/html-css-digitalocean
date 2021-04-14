@@ -366,6 +366,10 @@ a:hover {
 #features .container > h2 {
     margin-bottom: 30px;
 }
+#features .offer_box p {
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
 
 
 /* MAIN SERVICE */
@@ -447,7 +451,7 @@ footer .container {
 
     /* MAIN CUSTOMERS */
     #customers [class*="col-"] {
-        line-height: 150px;
+        line-height: 100px;
     }
     
 
@@ -460,10 +464,10 @@ footer .container {
         min-height: 180px;
     }
     .offer_box h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
     .offer_box p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     /* MAIN */
@@ -493,6 +497,13 @@ footer .container {
     /* HEADER NAVIGATION */
     #navigation .navbar-nav {
         padding-left: 100px;
+    }
+
+    /* MAIN */
+
+    /* MAIN CUSTOMERS */
+    #customers [class*="col-"] {
+        line-height: 150px;
     }
 
 }
