@@ -495,7 +495,7 @@ footer .container {
 }
 
 
-/* CUSTOMERS ICON */
+/* MEDIA QUERY CUSTOMERS ICON */
 @media screen and (max-width: 540px) {
 
     /* MAIN CUSTOMERS */
@@ -504,7 +504,7 @@ footer .container {
     }
 
 }
-/* /CUSTOMERS ICON */
+/* /MEDIA QUERY CUSTOMERS ICON */
 
 /* MEDIA QUERY NAVBAR COLLAPS */
 @media screen and (max-width: 1199px) {
