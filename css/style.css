@@ -53,8 +53,10 @@ section .container {
     background-color: #00000000;
     cursor: pointer;
 }
-.balls_box .ball:hover,
-.balls_box li:first-child .ball {
+.balls_box .ball:hover {
+    background-color: #006aff;
+}
+.balls_box .ball.active {
     background-color: #006aff;
 }
 
@@ -446,15 +448,17 @@ footer .container {
         transform: translate(0, -50%);
         font-size: 30px;
         font-weight: 700;
+        color: #031c4e;
         cursor: pointer;
+    }
+    .chevron_box i[class*="fa-chevron-"].active {
+        color: #6f7b97;
     }
     .chevron_box .fas.fa-chevron-left {
         left: 0;
-        color: #6f7b97;
     }
     .chevron_box .fas.fa-chevron-right {
         right: 0;
-        color: #031c4e;
     }
     .chevron_box .fas.fa-chevron-right:hover {
         right: 0;
