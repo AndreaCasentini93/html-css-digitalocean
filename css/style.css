@@ -253,11 +253,8 @@ a:hover {
 #customers {
     padding: 30px 0;
 }
-#customers .container {
-    overflow-x: hidden;
-}
 #customers h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 16px;
 }
 #customers [class*="col-"] {
