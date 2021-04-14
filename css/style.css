@@ -357,8 +357,6 @@ a:hover {
     margin-bottom: 20px;
 }
 
-
-
 /* MAIN FEATURES */
 
 
@@ -366,7 +364,27 @@ a:hover {
 
 
 /* MAIN TEAMS */
-
+#teams h2 {
+    margin-bottom: 80px;
+}
+#teams .rocker_box {
+    padding: 60px 5px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+#teams .rocker_box img {
+    width: 90%;
+    margin-bottom: 20px;
+}
+#teams .rocker_box span {
+    display: block;
+}
+#teams .rocker_box span:first-child {
+    font-weight: 700;
+}
+#teams .rocker_box span:last-child {
+    margin-bottom: 30px;
+}
 
 /* MAIN STARTED */
 
@@ -440,6 +458,11 @@ footer .container {
     }
     #configuration .configuration_box p {
         font-size: 14px;
+    }
+
+    /* MAIN TEAMS */
+    #teams .rocker_box img {
+        width: 50%;
     }
 
 }
