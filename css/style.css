@@ -52,10 +52,12 @@ section .container {
     border: 1px solid #006aff;
     background-color: #00000000;
     cursor: pointer;
-    transition: background-color .3s;
+    transition: background-color .1s;
+    transition: transform .1s;
 }
-.balls_box .ball:hover {
+.balls_box .ball:not(.active):hover {
     background-color: #006aff;
+    transform: scale(1.3);
 }
 .balls_box .ball.active {
     background-color: #006aff;
@@ -369,6 +371,10 @@ a:hover {
     width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: transform .3s;
+}
+#control_panel img:hover {
+    transform: scale(1.05);
 }
 
 /* MAIN FEATURES */
@@ -416,6 +422,10 @@ a:hover {
     padding: 60px 5px;
     margin-bottom: 20px;
     background-color: #ffffff;
+    transition: transform .3s;
+}
+#teams .rocker_box:hover {
+    transform: scale(1.05);
 }
 #teams .rocker_box img {
     width: 90%;
@@ -485,6 +495,11 @@ footer .list_block a:hover {
     background-color: #ffffff;
     box-shadow: 1px 1px 3px #808080;
     cursor: pointer;
+    opacity: 0;
+    animation-name: appearance;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 #baloon p {
     margin: 0;
@@ -515,6 +530,11 @@ footer .list_block a:hover {
     background-color: #006aff;
     box-shadow: 1px 1px 3px #808080;
     cursor: pointer;
+    opacity: 0;
+    animation-name: appearance;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 #shark .circle {
     display: inline-block;
@@ -531,6 +551,17 @@ footer .list_block a:hover {
     font-size: 10px;
     color: #ffffff;
     background-color: #ff0000;
+}
+
+@keyframes appearance {
+    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
 }
 
 
@@ -554,7 +585,8 @@ footer .list_block a:hover {
         font-weight: 700;
         color: #031c4e;
         cursor: pointer;
-        transition: color .3s;
+        transition: color .1s;
+        transition: font-size .1s;
     }
     .chevron_box i[class*="fa-chevron-"].active {
         color: #6f7b97;
@@ -565,9 +597,9 @@ footer .list_block a:hover {
     .chevron_box .fas.fa-chevron-right {
         right: 0;
     }
-    .chevron_box .fas.fa-chevron-right:hover {
-        right: 0;
+    .chevron_box i[class*="fa-chevron-"]:not(.active):hover {
         color: #6f7b97;
+        font-size: 40px;
     }
 
     /* HEADER */
