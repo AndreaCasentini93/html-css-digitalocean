@@ -370,7 +370,6 @@ a:hover {
 #control_panel img {
     width: 100%;
     margin-bottom: 20px;
-    cursor: pointer;
     transition: transform .3s;
 }
 #control_panel img:hover {
