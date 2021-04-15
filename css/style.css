@@ -316,7 +316,7 @@ a:hover {
 #jumbotron #account p a:hover {
     text-decoration: underline;
 }
-#jumbotron #account a img {
+#jumbotron #account button img {
     position: absolute;
     top: 50%;
     left: 10px;
